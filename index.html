@@ -761,10 +761,36 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Added styles for the requested elements */
+        .vr-headset-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .vr-headset-images img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .what-we-do-header {
+            color: #9600ff;
+            text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-align: left;
+            padding-left: 10px;
+            border-left: 3px solid #9600ff;
+        }
     </style>
 </head>
 <body>
     <canvas id="matrixRain" class="matrix-rain"></canvas>
+
     <header>
         <div class="container header-container">
             <a href="#" class="logo">VR-<span>Real</span></a>
@@ -784,45 +810,27 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>Reality is in virtual reality</h1>
-            <p>Find the best reality show in your own capture!</p>
+            <h1>Security is in virtual reality</h1>
+            <p>Find the best reality show in your wom captiver</p>
             <a href="#start" class="cyber-btn">Start now</a>
         </div>
     </section>
 
-    <!-- Image Gallery -->
-    <section class="container">
-        <div class="image-gallery">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="VR Headset">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="VR Experience">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="VR Gaming">
-            </div>
-        </div>
-    </section>
-
-    <!-- Clients Section -->
     <section class="clients">
         <div class="container">
             <div class="client-logos">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png" alt="The New York Times" class="client-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Fortnite_logo.png" alt="FORTNITE" class="client-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Forbes_logo.svg" alt="Forbes" class="client-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/CNN_International_logo.svg" alt="CNN" class="client-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Entrepreneur_logo.svg" alt="Entrepreneur" class="client-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/The_Guardian_logo.svg" alt="Guardian" class="client-logo">
+                <img src="https://files.catbox.moe/b6zkcx.png" alt="The New York Times" class="client-logo">
+                <img src="https://files.catbox.moe/6xioee.png" alt="FORTNITE" class="client-logo">
+                <img src="https://files.catbox.moe/m3g0og.png" alt="Forbes" class="client-logo">
+                <img src="https://files.catbox.moe/bk4ck8.png" alt="CNN" class="client-logo">
+                <img src="https://files.catbox.moe/a63lvq.png" alt="Entrepreneur" class="client-logo">
+                <img src="https://files.catbox.moe/06ko1m.png" alt="Guardian" class="client-logo">
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
+    
     <section class="about" id="about">
         <div class="container about-container">
             <div class="about-content">
@@ -834,55 +842,43 @@
                     <a href="#" class="cyber-btn" style="margin-right: 15px;">Learn more</a>
                     <p><i class="fas fa-phone"></i> Call us for free: 6654 9584 5221</p>
                 </div>
-            </div>
-            <div class="about-image cyber-glow">
-                <img src="https://images.unsplash.com/photo-1589254066214-7e5ab5f5a5e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="VR Technology">
-                <div class="image-border"></div>
+
+                <!-- Added VR headset images as requested -->
+                <div class="vr-headset-images">
+                    <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="VR Headset">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="VR Experience">
+                    <img src="https://files.catbox.moe/s44ra6.png" alt="VR Headset">
+                    <img src="https://files.catbox.moe/ffvakd.png" alt="VR Technology">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- What We Do Section - Updated with purple headers at top of each box -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-title">
-                <h2>What we do</h2>
+                <h2>WHAT WE DO</h2>
             </div>
             <div class="services-grid">
                 <div class="service-card cyber-glow">
-                    <div class="service-icon">
-                        <i class="fas fa-question"></i>
-                    </div>
-                    <h3>Reality Check</h3>
+                    <h3 class="what-we-do-header">REALITY CHECK</h3>
                     <p>Are you aware of your own reality? Are you sure that you're a real world?</p>
                 </div>
                 <div class="service-card cyber-glow">
-                    <div class="service-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Vision Enhancement</h3>
+                    <h3 class="what-we-do-header">VISION ENHANCEMENT</h3>
                     <p>Change your eyes and feel better at your heart?</p>
-                    <a href="#" class="cyber-btn" style="margin-top: 15px;">Check the reality</a>
+                    <a href="#" class="cyber-btn" style="margin-top: 15px;">CHECK THE REALITY</a>
                 </div>
                 <div class="service-card cyber-glow">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Dream Reality</h3>
+                    <h3 class="what-we-do-header">DREAM REALITY</h3>
                     <p>Dream with the best AR VR reality show in your cap</p>
-                </div>
-                <div class="service-card cyber-glow">
-                    <div class="service-icon">
-                        <i class="fas fa-newspaper"></i>
-                    </div>
-                    <h3>Blog & Insight</h3>
-                    <p>Stay updated with the latest in virtual and augmented reality technology.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Business Section -->
+    <!-- Rest of your original sections -->
     <section class="business" id="pages">
         <div class="container business-content">
             <h2>Start Agency in Asia</h2>
@@ -892,7 +888,6 @@
         </div>
     </section>
 
-    <!-- Client Showcase Section - Cyberpunk Styled -->
     <section class="client-showcase">
         <div class="container">
             <div class="section-title">
@@ -909,7 +904,7 @@
                     <div class="client-overlay" style="background: linear-gradient(135deg, rgba(255,0,160,0.7), rgba(150,0,255,0.7))"></div>
                 </div>
                 <div class="client-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Samsung_Logo.svg" alt="Samsung">
+                    <img src="https://files.catbox.moe/z421wl.png" alt="Samsung">
                     <div class="client-overlay" style="background: linear-gradient(135deg, rgba(150,0,255,0.7), rgba(15,240,252,0.7))"></div>
                 </div>
                 <div class="client-card">
@@ -924,7 +919,6 @@
         </div>
     </section>
 
-    <!-- Analysis Section - Cyberpunk Styled -->
     <section class="analysis">
         <div class="container">
             <div class="about-container">
@@ -949,7 +943,6 @@
         </div>
     </section>
 
-    <!-- Sensory Review Section (renamed from Sexual) - Cyberpunk Styled -->
     <section class="sensory-review">
         <div class="container">
             <div class="section-title">
@@ -986,7 +979,6 @@
         </div>
     </section>
 
-    <!-- Web Development Section - Cyberpunk Styled -->
     <section class="web-dev">
         <div class="container">
             <div class="section-title">
@@ -1030,7 +1022,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta" id="start">
         <div class="container business-content">
             <h2>Ready to experience virtual reality like never before?</h2>
@@ -1039,7 +1030,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="contact">
         <div class="container">
             <div class="footer-container">
